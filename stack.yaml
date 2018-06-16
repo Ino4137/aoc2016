@@ -1,0 +1,4 @@
+resolver: lts-11.13
+compiler: ghc-8.4.2
+packages:
+- .
