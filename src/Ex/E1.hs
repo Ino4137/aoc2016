@@ -1,4 +1,4 @@
-module Ex.E1 (solve1, solve2) where
+module Ex.E1 (solve11, solve12) where
 
 import Data.List.Split (splitOn)
 import Control.Monad.Trans.State
@@ -58,13 +58,13 @@ makeMove2 move = do
       else do
         put $ (newP, dir, ST.union path mp, Just el)
   
-solve1 = uncurry ((+) `on` abs) . toTup . fst $ execState (mapM makeMove moves) (Point 0 0, N)
+solve11 = uncurry ((+) `on` abs) . toTup . fst $ execState (mapM makeMove moves) (Point 0 0, N)
   where
     moves = map parseMove . splitOn "," $ inp1
     toTup (Point x y) = (x,y)
     test1 = " R188"
 
-solve2 = fmap (uncurry ((+) `on` abs)) . (\(_,_,_,x) -> x) $ execState (mapM makeMove2 moves) (Point 0 0, N, ST.empty, Nothing)
+solve12 = fmap (uncurry ((+) `on` abs)) . (\(_,_,_,x) -> x) $ execState (mapM makeMove2 moves) (Point 0 0, N, ST.empty, Nothing)
   where
     moves = map parseMove . splitOn "," $ inp1
     toTup (Point x y) = (x,y)

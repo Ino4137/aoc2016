@@ -29,27 +29,18 @@ library:
   - lens
   - transformers
   - containers
+  - raw-strings-qq
   default-extensions: 
   - ViewPatterns
   - LambdaCase
   - GeneralizedNewtypeDeriving
   - TemplateHaskell
+  - QuasiQuotes
 
 executables:
   aoc2016-exe:
     main:                Main.hs
     source-dirs:         app
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - aoc2016
-
-tests:
-  aoc2016-test:
-    main:                Spec.hs
-    source-dirs:         test
     ghc-options:
     - -threaded
     - -rtsopts
