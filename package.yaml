@@ -36,6 +36,7 @@ library:
   - GeneralizedNewtypeDeriving
   - TemplateHaskell
   - QuasiQuotes
+  - RecordWildCards
 
 executables:
   aoc2016-exe:

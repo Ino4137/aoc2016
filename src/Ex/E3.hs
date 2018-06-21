@@ -1,4 +1,4 @@
-module Ex.E3 where
+module Ex.E3 (solve31, solve32) where
 
 import Inputs
 
