@@ -30,6 +30,7 @@ library:
   - transformers
   - containers
   - raw-strings-qq
+  - MissingH
   default-extensions: 
   - ViewPatterns
   - LambdaCase
