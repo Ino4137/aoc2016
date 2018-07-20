@@ -7,8 +7,8 @@ import Data.Ord
 
 solve61 = map mostFreq . transpose . lines $ inp6
   where
-    mostFreq = (\(Down (_,x)) -> x) . head . sort 
-      . map (Down . ((,) <$> length <*> head)) 
+    mostFreq = snd . head . sortOn Down
+      . map ((,) <$> length <*> head)
       . group . sort 
 
 solve62 = map mostFreq . transpose . lines $ inp6
