@@ -31,6 +31,7 @@ library:
   - containers
   - raw-strings-qq
   - MissingH
+  - dlist
   default-extensions: 
   - ViewPatterns
   - LambdaCase
