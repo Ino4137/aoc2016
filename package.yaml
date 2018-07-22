@@ -39,6 +39,20 @@ library:
   - TemplateHaskell
   - QuasiQuotes
   - RecordWildCards
+  - GADTs
+  - DataKinds
+  - ScopedTypeVariables
+  - TypeApplications
+  - KindSignatures
+  - FlexibleInstances
+  - TypeFamilies
+  - TypeOperators
+  - RankNTypes
+  - AllowAmbiguousTypes
+  - UndecidableInstances
+  - PartialTypeSignatures
+  - FlexibleContexts
+  - ConstrainedClassMethods
 
 executables:
   aoc2016-exe:
